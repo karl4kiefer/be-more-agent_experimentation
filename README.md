@@ -1,4 +1,5 @@
-# Be More Agent 🤖
+# Be More Agent - Forked Experimental Version🤖
+*Note: This is a forked project for personal tuning and experimentation.
 **A Customizable, Offline-First AI Agent for Raspberry Pi**
 
 [![Watch the Demo](https://img.youtube.com/vi/l5ggH-YhuAw/maxresdefault.jpg)](https://youtu.be/l5ggH-YhuAw)
