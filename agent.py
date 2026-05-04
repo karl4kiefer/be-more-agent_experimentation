@@ -30,8 +30,8 @@ import warnings
 import wave
 import struct 
 
-# Suppress harmless library warnings
-warnings.filterwarnings("ignore", category=RuntimeWarning, module="duckduckgo_search")
+# Suppress harmless library warnings. Turned off for the time being.
+    # warnings.filterwarnings("ignore", category=RuntimeWarning, module="duckduckgo_search")
 
 # Core dependencies
 import sounddevice as sd
@@ -47,7 +47,7 @@ import ollama
 from duckduckgo_search import DDGS 
 
 # =========================================================================
-# 1. CONFIGURATION & CONSTANTS
+# MARK: - CONFIGURATION & CONSTANTS
 # =========================================================================
 
 CONFIG_FILE = "config.json"
@@ -200,7 +200,7 @@ thinking_sounds_dir = "sounds/thinking_sounds"
 error_sounds_dir = "sounds/error_sounds"
 
 # =========================================================================
-# 2. GUI CLASS
+# MARK: - GUI CLASS
 # =========================================================================
 
 class BotGUI:
@@ -439,7 +439,7 @@ class BotGUI:
         self.master.after(0, update_text_stream)
 
     # =========================================================================
-    # 3. ACTION ROUTER
+    # MARK: - ACTION ROUTER
     # =========================================================================
     
     def execute_action_and_get_result(self, action_data):
@@ -511,7 +511,7 @@ class BotGUI:
         return None
 
     # =========================================================================
-    # 4. CORE LOGIC
+    # MARK: - CORE LOGIC
     # =========================================================================
 
     def safe_main_execution(self):
@@ -805,7 +805,7 @@ class BotGUI:
             return None
 
     # =========================================================================
-    # 5. CHAT & RESPOND
+    # MARK: - CHAT & RESPOND
     # =========================================================================
 
     def chat_and_respond(self, text, img_path=None):
